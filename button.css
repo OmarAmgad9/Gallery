@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-y: scroll;
+    font-size: 16px;
+}
+
+.root {
+
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-areas: "nav cont cont";
+}
+
+#one {
+    display: flex;
+    justify-content: center;
+
+}
+
+#one:hover {
+    color: black;
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+#two {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+nav {
+    color: white;
+    grid-area: nav;
+    background-color: rgb(244, 67, 54);
+    padding: 20px;
+}
+
+nav ul li {
+    font-weight: 600;
+    margin-top: 10px;
+    list-style-type: none;
+    padding-top: 20px
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transform: scale(1.1, 1.1);
+}
+
+section {
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: rgb(244, 68, 55);
+    font-size: 40px;
+}
+
+section div img {
+    width: 500px;
+    height: 500px;
+    margin: 15px;
+    filter: contrast(.5);
+}
+
+section div img:hover {
+    filter: contrast(1);
+    cursor: pointer;
+
+}
